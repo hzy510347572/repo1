@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.zy.h</groupId>
+    <artifactId>wind-fire-thunder-lightning</artifactId>
+    <version>1.0.0</version>
+  </parent>
+
+  <modules>
+    <module>wind-gateway-web</module>
+  </modules>
+
+  <artifactId>wind-gateway</artifactId>
+  <name>wind-gateway</name>
+  <packaging>pom</packaging>
+  <description>
+    网关父工程
+  </description>
+
+
+
+  <dependencies>
+
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-gateway</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+      <version>2.2.10.RELEASE</version>
+    </dependency>
+
+  </dependencies>
+
+
+</project>

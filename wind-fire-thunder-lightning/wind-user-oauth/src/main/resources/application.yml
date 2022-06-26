@@ -1,0 +1,41 @@
+server:
+  port: 1114
+spring:
+  application:
+    name: authservice
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.213.131:33306/self_oauth?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 123456
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:23100/eureka
+  instance:
+    prefer-ip-address: true
+
+auth:
+  ttl: 7200  #token存储到cookie的过期时间
+  clientId: myself
+  clientSecret: myself
+  cookieDomain: localhost
+  cookieMaxAge: -1
+encrypt:
+  key-store:
+    location: classpath:/changgou83.jks
+    secret: changgou83
+    alias: changgou83
+    password: changgou83
+feign:
+  circuitbreaker:
+    enabled: true
+#hystrix 配置
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+          strategy: SEMAPHORE # hystrix隔离级别  信号量隔离
