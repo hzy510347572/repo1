@@ -1,11 +1,11 @@
 server:
-  port: 1114
+  port: 1112
 spring:
   application:
-    name: authservice
+    name: userservice
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.213.131:33306/wind_hzy?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://192.168.213.131:33306/wind_hzy?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
     password: 123456
 eureka:
@@ -15,18 +15,7 @@ eureka:
   instance:
     prefer-ip-address: true
 
-auth:
-  ttl: 7200  #token存储到cookie的过期时间
-  clientId: myself
-  clientSecret: myself
-  cookieDomain: localhost
-  cookieMaxAge: -1
-encrypt:
-  key-store:
-    location: classpath:/83.jks
-    secret: changgou83
-    alias: changgou83
-    password: changgou83
+
 feign:
   circuitbreaker:
     enabled: true

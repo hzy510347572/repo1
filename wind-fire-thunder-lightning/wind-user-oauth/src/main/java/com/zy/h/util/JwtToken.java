@@ -23,7 +23,7 @@ public class JwtToken {
 
     public static String adminJwt(){
         // 证书文件路径
-        String key_location="changgou83.jks";
+        String key_location= "83.jks";
         // 秘钥库密码
         String key_password="changgou83";
         // 秘钥密码

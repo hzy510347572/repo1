@@ -31,9 +31,9 @@ spring:
                 redis-rate-limiter.burstCapacity: 1
 
 
-#  redis:
-#    host: 192.168.231.131
-#    database: 0
+  redis:
+    host: 192.168.231.131
+    database: 0
 #  cloud:
 #    gateway:
 #      routes:

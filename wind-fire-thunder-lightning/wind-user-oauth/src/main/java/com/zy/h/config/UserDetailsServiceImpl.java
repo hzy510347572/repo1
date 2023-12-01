@@ -1,6 +1,6 @@
 package com.zy.h.config;
 
-import com.zy.h.service.UserFeign;
+//import com.zy.h.service.UserFeign;
 import com.zy.h.util.UserJwt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -24,8 +24,8 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Autowired
     ClientDetailsService clientDetailsService;
 
-    @Autowired(required = false)
-    private UserFeign userFeign;
+//    @Autowired(required = false)
+//    private UserFeign userFeign;
 
     /****
      * 自定义授权认证
@@ -55,12 +55,14 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         }
 
         // 根据用户名查询用户信息
-        String pwd = userFeign.findById(username).getData().getPassword();
-//        String pwd = new BCryptPasswordEncoder().encode("szitheima");
-//        String pwd = new BCryptPasswordEncoder().encode(password);
-        //创建User对象
-        String permissions = "goods_list,seckill_list"; // 用户的权限（从数据库中查询）
-        UserJwt userDetails = new UserJwt(username,pwd,AuthorityUtils.commaSeparatedStringToAuthorityList(permissions));
-        return userDetails;
+//        String pwd = userFeign.findById(username).getData().getPassword();
+////        String pwd = new BCryptPasswordEncoder().encode("szitheima");
+////        String pwd = new BCryptPasswordEncoder().encode(password);
+//        //创建User对象
+//        String permissions = "goods_list,seckill_list"; // 用户的权限（从数据库中查询）
+//        UserJwt userDetails = new UserJwt(username,pwd,AuthorityUtils.commaSeparatedStringToAuthorityList(permissions));
+//        return userDetails;
+
+        return null;
     }
 }
