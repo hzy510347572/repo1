@@ -1,8 +1,25 @@
-var objc = JSON.parse($response.body);
+$task.fetch(myRequest).then(response => {
 
-objc.pr="ROLE_SVIP"
-objc.is_vip=true
+    
+var obj = JSON.parse(response.body);
 
-console.log(JASON.stringify(objc))
+obj.pr="ROLE_SVIP"
+obj.is_vip=true
 
-$done({body : JSON.stringify(objc)});
+var last=JSON.stringify(obj);
+response.body=last
+  
+    console.log(response.statusCode + "\n\n" + response.body);
+
+
+
+
+
+
+
+
+    $done();
+}, reason => {
+    console.log(reason.error);
+    $done();
+});
