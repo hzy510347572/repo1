@@ -1,8 +1,9 @@
 
 var objc = JSON.parse($response.body);
 
-objc.pr="ROLE_SVIP"
-objc.is_vip=true
+objc.svip=1
+objc.end=1710086400000
+objc.payYear=true
 
 console.log(JSON.stringify(objc))
 
