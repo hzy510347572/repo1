@@ -2,9 +2,11 @@
 var objc = JSON.parse($response.body);
 
 objc.svip=1
-objc.end=1810086400000
+objc.end=1910086400000
 objc.payYear=true
-objc.userType=3
+objc.userType=2
+objc.service=2
+objc.student=true
 
 console.log(JSON.stringify(objc))
 
