@@ -1,7 +1,7 @@
 
 var objc = JSON.parse($response.body);
 
-objc.svip=1
+objc.svip=1910086400000
 objc.end=1910086400000
 objc.payYear=true
 objc.userType=2
