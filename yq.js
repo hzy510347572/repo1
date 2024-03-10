@@ -10,7 +10,7 @@ obj.data.interest.owner.isTopLevel=true;
 obj.data.interest.owner.isMemberTopLevel=true;
 obj.data.interest.owner.isExpired=false;
 obj.data.interest.interests.open_api=true;
-obj.data.interest.userMemberInfo.expired_at="2099-11-29T15:59:59.000Z";
+obj.data.userMemberInfo.expired_at="2099-11-29T15:59:59.000Z";
 
 console.log(JSON.stringify(obj))
 $done({body : JSON.stringify(obj)});
