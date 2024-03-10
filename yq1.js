@@ -1,7 +1,8 @@
 var obj = JSON.parse($response.body);
 
-obj.data.order.amount=0.00;
-obj.data.order.product_amount="0.00";
+obj.level=3;
+obj.vip.expire_time=2029140433;
+obj.vip.has_ad=0;
 
 
 
