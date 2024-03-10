@@ -1,8 +1,9 @@
 var obj = JSON.parse($response.body);
 
-obj.level=3;
-obj.vip.expire_time=2029140433;
-obj.vip.has_ad=0;
+obj.body.userInfo.isSvip=1;
+obj.body.userInfo.isvip=1;
+
+
 
 
 
