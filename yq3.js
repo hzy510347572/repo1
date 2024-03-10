@@ -3,6 +3,6 @@
 var obj = JSON.parse($response.body);
 
 
-obj.body.userInfo.is_vip_user=1;
+obj.body.user.is_vip=true;
 
 $done({body : JSON.stringify(obj)});
