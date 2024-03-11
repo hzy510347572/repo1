@@ -10,6 +10,6 @@ obj.tplInfo.price="0阅饼";
 obj.tplInfo.button[0].url=obj.tplInfo.button[0].url.replace(/price=[0-9]/g, "price=0");
 
 
-
+console.log(JSON.stringify(obj));
 
 $done({body : JSON.stringify(obj)});
