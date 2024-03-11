@@ -132,6 +132,6 @@ $response.body="<!DOCTYPE html><html><head><meta charset=\"utf-8\"/>\n" +
                 "\n" +
                 "window.orderCloseCallBack = function() {return {isBalanceEnough: true};}\n" +
                 "</script></body></html>";
-console("=====================html替换===============")
+console.log("=====================html替换===============")
 
 $done({body : $response.body});
