@@ -3,7 +3,6 @@
 var obj = JSON.parse($response.body);
 
 
-   obj.Data.Charging.Price="0.0";
 
 if(obj.tplInfo != null && obj.tplInfo != "undefined"){
     obj.tplInfo.amount="99999999阅饼";
