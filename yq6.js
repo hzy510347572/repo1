@@ -10,9 +10,9 @@ obj.Data.bookCatalog.downloadType="1";
 obj.Data.bookCatalog.type="0";
 
 // obj.Data.bookCatalog.relBookId="12747058";
-// obj.Data.relResource.book_id="12747058";
-obj.Data.relResource.status="10";
-obj.Data.relResource.type="0";
+// obj.Data.bookCatalog.relResource.book_id="12747058";
+obj.Data.bookCatalog.relResource.status="10";
+obj.Data.bookCatalog.relResource.type="0";
 
 
 if(obj.tplInfo != null && obj.tplInfo != "undefined"){
