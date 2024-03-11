@@ -8,6 +8,7 @@ if(obj.tplInfo != null && obj.tplInfo != "undefined"){
     obj.tplInfo.total=99999999;
     obj.tplInfo.price="0阅饼";
     obj.tplInfo.button[0].url=obj.tplInfo.button[0].url.replaceAll(/price\=\d+/g, "price=0");
+    obj.tplInfo.button[0].url=obj.tplInfo.button[0].url.replaceAll(/amount\=\d+/g, "amount=99999999");
 }
 
 console.log(JSON.stringify(obj));
