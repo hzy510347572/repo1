@@ -3,6 +3,8 @@ var obj = JSON.parse($response.body);
 
 obj.gender = 2;
 
+var o = {};
+obj.member_rights[0] = o;
 obj.member_rights[0].status = "active";
 obj.member_rights[0].expire_at = 4102415999;
 obj.member_rights[0].real_type = "svip";
