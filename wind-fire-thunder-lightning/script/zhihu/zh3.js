@@ -2,7 +2,7 @@
 var obj = JSON.parse($response.body);
 
 obj.id = "0bf66de1270b549756c872de4d07f240";
-obj.gender = 2;
+obj.gender = 1;
 obj.url = "https://api.zhihu.com/people/0bf66de1270b549756c872de4d07f240";
 obj.avatar_url = "https://pic1.zhimg.com/v2-de028e52cd2e464906c05a1c25cb1210_l.jpg?source=8c5c7284";
 obj.is_bind_phone = true;
