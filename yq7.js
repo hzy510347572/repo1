@@ -3,16 +3,16 @@
 var obj = JSON.parse($response.body);
 
 
-obj.Charging.FeeType=2;
+obj.Data.Charging.FeeType=2;
 
-obj.bookCatalog.isEpubSerialize="1";
-obj.bookCatalog.downloadType="1";
-obj.bookCatalog.type="0";
+obj.Data.bookCatalog.isEpubSerialize="1";
+obj.Data.bookCatalog.downloadType="1";
+obj.Data.bookCatalog.type="0";
 
-// obj.bookCatalog.relBookId="12747058";
-// obj.relResource.book_id="12747058";
-obj.relResource.status="10";
-obj.relResource.type="0";
+// obj.Data.bookCatalog.relBookId="12747058";
+// obj.Data.relResource.book_id="12747058";
+obj.Data.relResource.status="10";
+obj.Data.relResource.type="0";
 
 
 if(obj.tplInfo != null && obj.tplInfo != "undefined"){
