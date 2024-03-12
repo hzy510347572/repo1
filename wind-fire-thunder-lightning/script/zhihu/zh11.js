@@ -3,6 +3,10 @@ var obj = JSON.parse($response.body);
 
 $response.statusCode = 200;
 
+obj = {};
+obj.success.code = 200;
+obj.success.message = "支付成功";
+
 obj.wallet = {};
 obj.wallet.ios_zhixue_coin=99999999;
 obj.wallet.android_zhixue_coin=99999999;
