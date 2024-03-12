@@ -6,12 +6,12 @@ var param1 = "";
 var param2 = "";
 for (let i = 0; i < arr.length; i++) {
     if (arr[i].length === 19) {
-        if (param1.length === 0) {
+        if (param1 === "") {
             param1 = arr[i];
-            continue;
+        }else {
+            param2 = arr[i];
+            break;
         }
-        param2 = arr[i];
-        break;
     }
 }
 
