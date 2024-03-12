@@ -1,4 +1,4 @@
-var obj = response.body;
+var obj = $response.body;
 
 obj.code=0;
 obj.msg="success";
