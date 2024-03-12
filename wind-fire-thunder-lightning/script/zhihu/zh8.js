@@ -1,6 +1,8 @@
 var url = $request.url;
 
-var arr = url.split("/");
+var arr1 = url.split("\?");
+
+var arr = arr1[0].split("/");
 
 var param1 = "";
 var param2 = "";
