@@ -21,7 +21,7 @@ for (let i = 0; i < arr.length; i++) {
 
 // https://www.zhihu.com/market/paid_column/1738214936969220096/section/1736790346561044480?in_notes=2&zh_forcehybrid=1&zh_nav_left=back&preload=prefetch
 
-$request.url = "https://www.zhihu.com/market/paid_column/" + param1 + "/section/" + param2 + "?in_notes=2&zh_forcehybrid=1&zh_nav_left=back&preload=prefetch";
+$request.url = "https://www.zhihu.com/market/paid_column/" + param1 + "/section/" + param2 + "?in_notes=2&temp_progress=1.0&zh_forcehybrid=1&zh_nav_left=back&preload=prefetch";
 
 console.log($request.url);
 
