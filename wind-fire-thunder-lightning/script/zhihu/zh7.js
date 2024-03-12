@@ -8,5 +8,6 @@ for (i = 0; i < obj.data.length; i++) {
     // obj.data[i].is_free=true;
    
  }
+console.log("---------" + obj.data[0].is_locked + "---------");
 
 $done({body : JSON.stringify(obj)});
