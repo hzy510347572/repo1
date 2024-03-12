@@ -1,14 +1,16 @@
 var url = $request.url;
 
 var arr1 = url.split("\?");
+console.log(arr1);
 
 var arr = arr1[0].split("/");
+console.log(arr);
 
 var param1 = "";
 var param2 = "";
 for (let i = 0; i < arr.length; i++) {
     if (arr[i].length === 19) {
-        if (param1 === "") {
+        if (param1 == "") {
             param1 = arr[i];
         }else {
             param2 = arr[i];
