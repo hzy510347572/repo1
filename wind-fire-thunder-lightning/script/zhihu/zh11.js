@@ -1,6 +1,8 @@
 
 var obj = JSON.parse($response.body);
 
+
+
 $response.statusCode = 200;
 
 obj = {};
@@ -23,4 +25,6 @@ $response.body = JSON.stringify(obj)
 
 console.log($response.body, $response.statusCode);
 
-$done({body : $response.body});
+var oob = $response;
+
+$done({oob});
