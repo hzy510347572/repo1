@@ -2,8 +2,7 @@
 var obj = JSON.parse($response.body);
 
 
-var o = {};
-obj.subscriptions[0] = o;
+obj.subscriptions[0] = {};
 
 obj.subscriptions[0].id = 4;
 obj.subscriptions[0].real_name = "svip";

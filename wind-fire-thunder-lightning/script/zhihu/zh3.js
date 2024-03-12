@@ -10,8 +10,7 @@ obj.is_following_mp_wechat = false;
 obj.is_unicom_free = false;
 
 
-var o = {};
-obj.member_rights[0] = o;
+obj.member_rights[0] = {};
 obj.member_rights[0].status = "active";
 obj.member_rights[0].expire_at = 4102415999;
 obj.member_rights[0].real_type = "svip";
@@ -26,7 +25,7 @@ obj.member_rights[0].icon.night = "https://picx.zhimg.com/v2-e678bd58e61fd9fbba1
 
 obj.type = "people";
 obj.from = "go";
-obj.url_token = "she-xing-bai-bu-17";
+obj.url_token = "22-10-95-77";
 
 obj.subscriptions[0] = {};
 obj.subscriptions[0].id = 4;

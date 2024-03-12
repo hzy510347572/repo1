@@ -1,7 +1,5 @@
 
-var obj = $response.body;
-
-obj = "{\n" +
+var obj = "{\n" +
     " \"header\" : {\n" +
     "   \"expire\" : {\n" +
     "     \"jump_url\" : \"\",\n" +
