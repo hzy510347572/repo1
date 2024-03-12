@@ -3,8 +3,8 @@
 var obj = JSON.parse($response.body);
 
 
-obj.Data.Charging.FeeType=2;
-obj.Data.Charging.Price=-1;
+// obj.Data.Charging.FeeType=2;
+// obj.Data.Charging.Price=-1;
 
 // obj.Data.bookCatalog.isEpubSerialize="1";
 // obj.Data.bookCatalog.downloadType="1";
