@@ -7,9 +7,9 @@ if (obj.data != null) {
         obj.data[i].is_free=true;
         if (obj.data[i].right == null) {
             obj.data[i].right = {};
-            obj.data[i].right.has_ownership=true;
         }
-
+        obj.data[i].right.has_ownership=true;
+        obj.data[i].right.has_purchased=true;
     }
     console.log("---------" + obj.data[0].is_locked + "---------");
 }else {
