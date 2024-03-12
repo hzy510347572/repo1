@@ -21,10 +21,7 @@ obj.wallet.ios_gold=99999999;
 obj.wallet.balance=99999999;
 obj.wallet.corp_balance=99999999;
 
-$response.body = JSON.stringify(obj)
+console.log(obj, $response.statusCode);
 
-console.log($response.body, $response.statusCode);
 
-var oob = $response;
-
-$done({oob});
+$done({obj});
