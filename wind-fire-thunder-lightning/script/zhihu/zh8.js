@@ -1,4 +1,4 @@
-var url = $ruquest.url;
+var url = $request.url;
 
 var arr = url.split("/");
 
@@ -17,8 +17,8 @@ for (let i = 0; i < arr.length; i++) {
 
 // https://www.zhihu.com/market/paid_column/1738214936969220096/section/1736790346561044480?in_notes=2&zh_forcehybrid=1&zh_nav_left=back&preload=prefetch
 
-$ruquest.url = "https://www.zhihu.com/market/paid_column/" + param1 + "/section/" + param2 + "?in_notes=2&zh_forcehybrid=1&zh_nav_left=back&preload=prefetch";
+$request.url = "https://www.zhihu.com/market/paid_column/" + param1 + "/section/" + param2 + "?in_notes=2&zh_forcehybrid=1&zh_nav_left=back&preload=prefetch";
 
-console.log($ruquest.url);
+console.log($request.url);
 
-$done({$ruquest});
+$done({$request});
