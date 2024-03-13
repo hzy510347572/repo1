@@ -2,7 +2,7 @@
 var obj = JSON.parse($response.body);
 
 obj.data.remain_gold= 99999999;
-obj.data.is_locked= true;
+obj.data.is_locked= false;
 
 
 console.log(JSON.stringify(obj));
