@@ -22,7 +22,7 @@ obj.body.userInfo.isUpgrade=true;
 obj.body.userInfo.verification=true;
 
 obj.body.zyVip.isVip=1;
-obj.body.zyVip.title=掌阅会员;
+obj.body.zyVip.title="掌阅会员";
 obj.body.zyVip.buttonUrl = "https://ih2.ireader.com/zytc/public/index.php?ca=Svip.Order&isShowTitle=0&showContentInStatusBar=1";
 obj.body.zyVip.buttonUrldesc="2099-12-31到期一键续费专享特权";
 obj.body.zyVip.buttonText="续费";
