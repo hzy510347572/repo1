@@ -10,9 +10,12 @@ obj.body.user.total_amount=99999999;
 obj.body.user.account_amount=99999999;
 obj.body.pay.amount=0;
 obj.body.pay.yb_amount=0.01;
-obj.body.pay.coupon_amount=9999;
+//obj.body.pay.coupon_amount=9999;
 obj.body.pay.gap_yb_amount=0;
 obj.body.pay.is_enough=true;
+obj.body.pay.discount=0.1;
+obj.body.pay.discount_type="vip";
+
 
 console.log(JSON.stringify(obj));
 
