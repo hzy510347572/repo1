@@ -12,6 +12,6 @@ obj.body.pay.amount=0;
 obj.body.pay.gap_yb_amount=0;
 obj.body.pay.is_enough=true;
 
-
+console.log(JSON.stringify(obj));
 
 $done({body : JSON.stringify(obj)});
