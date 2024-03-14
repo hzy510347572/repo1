@@ -25,7 +25,7 @@ if(obj.tplInfo != null && obj.tplInfo != "undefined"){
     var arr = url.split("usr%253D");
     var arr2 = arr[1].split("zysid%253D");
     
-    var usr = arr[1].substring(0, 10);
+    var usr = arr[1].substring(0, 11);
     var zysid = arr2[1].substring(0, 32);
     var bid= obj.Data.DownloadInfo.FileId;
     var cid= obj.Data.DownloadInfo.cid;
