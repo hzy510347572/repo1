@@ -20,6 +20,11 @@ if(obj.tplInfo != null && obj.tplInfo != "undefined"){
     obj.tplInfo.amount="99999999阅饼";
     obj.tplInfo.total=99999999;
     obj.tplInfo.price="0阅饼";
+
+    obj.button.type = "api_command";
+    obj.button.name = "一键购买本章";
+    
+    
     var url = obj.tplInfo.button[0].url;
 
     var arr = url.split("usr%253D");
