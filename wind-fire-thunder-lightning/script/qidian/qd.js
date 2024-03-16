@@ -18,6 +18,8 @@ obj.Data.PriceInfo.OriginPointPrice=0;
 
 
 obj.Data.NewChapterWithLimitFree=0;
+obj.Data.LimitFreeTips=null;
+
 
 
 
