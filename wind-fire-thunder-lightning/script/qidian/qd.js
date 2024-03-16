@@ -15,6 +15,9 @@ obj.Data.PriceInfo.DiscountPrice=0;
 obj.Data.PriceInfo.DiscountPointPrice=0;
 obj.Data.PriceInfo.OriginPrice=0;
 obj.Data.PriceInfo.OriginPointPrice=0;
+obj.Data.PriceInfo.NewChapterWithLimitFree=0;
+
+
 
 obj.Message="已订阅";
 obj.Result=401;
