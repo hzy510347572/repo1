@@ -1,7 +1,7 @@
 
 var obj = JSON.parse($response.body);
 
-oobj.code = 0;
+obj.code = 0;
 obj.buyfirst = "0|0|0|0|0";
 obj.team_leader = 0;
 obj.mztz_state = "87|256|999999999^1|1|1";
