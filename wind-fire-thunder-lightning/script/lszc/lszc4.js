@@ -1,8 +1,7 @@
 
 var obj = JSON.parse($response.body);
 
-obj.locked=0;
-obj.code=0;
+obj.count=1;
 
 console.log(JSON.stringify(obj));
 
