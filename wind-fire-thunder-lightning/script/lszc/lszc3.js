@@ -2,7 +2,8 @@
 var obj = JSON.parse($response.body);
 
 obj.code=0;
-obj.info="success!";
+obj.locked=0;
+obj.totalpay=999999;
 
 console.log(JSON.stringify(obj));
 
