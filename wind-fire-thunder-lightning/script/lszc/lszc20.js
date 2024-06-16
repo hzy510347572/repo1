@@ -1,0 +1,62 @@
+
+var obj = JSON.parse($response.body);
+
+obj.code = 0;
+obj.buyfirst = "0|0|0|0|0";
+obj.team_leader = 0;
+// obj.mztz_state = "87|256|999999999^1|1|1";
+obj.Notify_YYBG = 0;
+obj.ei_chest_killed = 0;
+obj.game_progress_done = 1;
+obj.tl_reward = "0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0";
+obj.fieldcount = 1;
+obj.reviewed = 0;
+obj.forge_lv = 0;
+obj.chest_fb_opened = "|||||";
+obj.ei_sr = 0;
+obj.team_pos = "-1|0|1|-1|2|-1";
+obj.transport_opened = "p020,p030,p010,p040";
+obj.qd_state = "qd_202406-CN4#0";
+obj.payreward_state = "0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0";
+obj.reach_map_index = "0_5";
+obj.yueka_got = null;
+obj.ysj_refreshtime = 0;
+obj.sfz = "440801199704170327";
+obj.ZhouYuQuest = 0;
+obj.tulu_equip = "----^----^----^----^----^----^----^----^----^----^----^----^----^----^----^----^----";
+obj.save_v = 265;
+obj.ei_chest_opened = 0;
+obj.NPC_NvEr = 0;
+obj.forge_exp = 0;
+obj.DayEnemyOpen = 1;
+obj.FB_YYBG = 0;
+obj.gold = 107487295;
+obj.buyyy = 0;
+obj.ei_reward = "0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0";
+obj.asset_table = 5;
+obj.DailyChest = 1;
+obj.info = "";
+obj.bind_diamond = 700;
+obj.v_gift_state = "0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1";
+obj.realname = "程诗月";
+obj.door_opened = "t000,t001,t040,t041";
+obj.enemy_killed = "e017,e021,e0210,e033,e0313,b040";
+obj.chest_opened = "1||1|1|1||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||";
+obj.door_fb_opened = "|||||";
+obj.ei_maxdiff = 0;
+obj.last_time = "2024-06-15 19:27:23";
+obj.yueka_day = null;
+obj.buyhd = "0|0|0|0|0|0|0|0|0";
+obj.diamond = 9999730;
+obj.lianjin_p = "0|0|0|0|0";
+obj.Save_NvEr = 0;
+obj.enemy_fb_killed = "|||||||";
+obj.totalpay = null;
+obj.game_progress = 1;
+obj.fb_difficulty = "1|1|1|1|1|1";
+obj.fb_valid_diff = "1|1|1|1|1|1";
+
+
+console.log(JSON.stringify(obj));
+
+$done({body : JSON.stringify(obj)});
