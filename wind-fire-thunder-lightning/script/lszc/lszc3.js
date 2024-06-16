@@ -5,7 +5,7 @@ obj.code=0;
 obj.locked=0;
 obj.totalpay=999999;
 obj.save_count=999999;
-obj.save_v=1;
+obj.save_v=999999;
 
 console.log(JSON.stringify(obj));
 
