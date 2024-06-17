@@ -1,7 +1,7 @@
 
 var obj = JSON.parse($response.body);
 
-var reqBody = $request;
+var reqBody = $request.url;
 console.log(reqBody);
 
 obj.qn_lv = 0;
