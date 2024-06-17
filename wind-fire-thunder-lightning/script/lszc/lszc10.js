@@ -4,8 +4,7 @@ var obj = JSON.parse($response.body);
 var reqBody = $request.url;
 console.log(reqBody);
 
-var reqParam = $request.form;
-console.log(reqParam);
+console.log(JSON.stringify($request));
 
 
 obj.qn_lv = 0;
