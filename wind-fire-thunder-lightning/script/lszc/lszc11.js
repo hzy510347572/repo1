@@ -1,7 +1,7 @@
 var obj = JSON.parse($response.body);
 
 obj.item4 = "{\"type\":510,\"star\":5,\"count\":801,\"locked\":0,\"pos\":288}|{\"type\":309,\"star\":0,\"count\":600,\"locked\":0,\"pos\":289}|{\"type\":509,\"star\":5,\"count\":999,\"locked\":0,\"pos\":290}|{\"type\":508,\"star\":4,\"count\":999,\"locked\":0,\"pos\":291}";
-obj.item6 = "|||";
+obj.item6 = "{\"type\":322,\"star\":5,\"count\":626,\"locked\":0,\"pos\":316}|{\"type\":323,\"star\":5,\"count\":626,\"locked\":0,\"pos\":317}||";
 obj.info = "";
 obj.code = 0;
 obj.item1 = "{\"type\":305,\"star\":5,\"count\":992,\"locked\":1,\"pos\":292}|{\"type\":306,\"star\":5,\"count\":900,\"locked\":0,\"pos\":293}|{\"type\":307,\"star\":5,\"count\":500,\"locked\":1,\"pos\":294}|{\"type\":400,\"star\":8,\"count\":501,\"locked\":0,\"pos\":295}";
