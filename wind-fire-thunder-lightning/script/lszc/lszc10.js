@@ -1,8 +1,6 @@
 
 var obj = JSON.parse($response.body);
 
-var reqBody = $request.url;
-console.log(reqBody);
 
 console.log(JSON.stringify($request));
 
@@ -14,10 +12,10 @@ obj.mohun = "{\"type\":511,\"type_sub\":\"511\",\"star\":5,\"level\":100,\"bag_p
 obj.equipsindex = 0;
 obj.equip2 = "|||||";
 obj.level = "{\"level\":60,\"exp\":0,\"hp\":809060,\"mp\":80225,\"anger\":100,\"qn_lv\":9000,\"jxs\":\"4|4|4\",\"re0\":0,\"re1\":0,\"re2\":0,\"re3\":0,\"rei\":0,\"rfi\":0,\"ryi\":0,\"rmi\":0}";
-obj.mohun2 = "";
+obj.mohun2 = "{\"type\":520,\"type_sub\":\"520\",\"star\":5,\"level\":100,\"bag_pos\":12,\"hz\":5}";
 obj.code = 0;
 obj.equip1 = "|||||";
-obj.mohun1 = "";
+obj.mohun1 = "{\"type\":508,\"type_sub\":\"201\",\"star\":5,\"level\":100,\"bag_pos\":2,\"hz\":5}";
 obj.info = "";
 
 
