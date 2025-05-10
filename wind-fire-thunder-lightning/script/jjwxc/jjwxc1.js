@@ -2,7 +2,7 @@
 var obj = JSON.parse($response.body);
 
 obj.code=200;
-obj.isvip=1;
+obj.isvip=2;
 obj.data.balances.jj=9999999;
 obj.porint=0;
 
