@@ -1,9 +1,9 @@
 
 var str1 = $response.body;
 
-var bodyStr = str1.substring(1, str1.length);
+var bodyStr = str1.substring(1, str1.length-1);
 
-bodyStr = bodyStr.replace("\\");
+bodyStr = bodyStr.replace(/\\/g, "");
 
 console.log(JSON.stringify(bodyStr));
 
