@@ -1,6 +1,6 @@
 
 var str1 = $response.body;
-str1 = str1.substring(1, str1.length);
+str1 = str1.substring(1, str1.length-1);
 console.log(str1);
 
 var obj = eval("(" + str1 + ")");
