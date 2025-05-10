@@ -3,7 +3,8 @@ var str1 = $response.body;
 
 var bodyStr = str1.substring(1, str1.length-1);
 
-bodyStr = bodyStr.replace(/\\/g, "");
+bodyStr = bodyStr.replaceAll("\\\"", '"');
+bodyStr = bodyStr.replaceAll("\\\"", '"');
 
 console.log(JSON.stringify(bodyStr));
 
