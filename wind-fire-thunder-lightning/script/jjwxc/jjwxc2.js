@@ -1,8 +1,8 @@
 
 var obj = JSON.parse($response.body);
 
-obj.isvip=1;
-obj.balance=9999999;
+
+obj.balance=99999;
 
 
 
