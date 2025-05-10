@@ -1,7 +1,10 @@
 
 var str1 = $response.body;
 
+console.log(str1);
+
 var obj = eval("(" + str1 + ")");
+console.log(JSON.stringify(obj));
 
 obj.body.accountInfo.totalAmount=9999999;
 obj.body.accountInfo.usrAmount=999999.90;
