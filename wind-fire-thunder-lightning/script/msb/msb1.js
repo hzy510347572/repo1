@@ -28,7 +28,7 @@ body = body.replace(/"accredit":\s*false/g, '"accredit":true');
 
 body = body.replace(/"buyFlag":\s*false/g, '"buyFlag":true');
 
-// body = body.replace(/"price":\s*\d+/g, '"price":0');
+body = body.replace(/"price":\s*\d+/g, '"price":0');
 body = body.replace(/"hasState":\s*0/g, '"hasState":1');
 
 
