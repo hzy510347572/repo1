@@ -9,6 +9,7 @@
 
 https:\/\/gateway\.mashibing\.com\/edu-course\/courseHomePage\/isHasCourse* url script-response-body https://raw.githubusercontent.com/hzy510347572/repo1/branch1/wind-fire-thunder-lightning/script/msb/msb3.js
 https:\/\/gateway\.mashibing\.com\/edu-live\/appLiveSign\/findSignStatus* url script-response-body https://raw.githubusercontent.com/hzy510347572/repo1/branch1/wind-fire-thunder-lightning/script/msb/msb3.js
+https:\/\/gateway\.mashibing\.com\/edu-live\/appLiveSign\/saveSign* url script-response-body https://raw.githubusercontent.com/hzy510347572/repo1/branch1/wind-fire-thunder-lightning/script/msb/msb3.js
 
 [mitm]
 
@@ -20,6 +21,8 @@ var body = $response.body;
 
 
 body = body.replace(/"data":\s*false/g, '"data":true');
+body = body.replace(/"data":\s*null/g, '"data":true');
+body = body.replace(/"code":\s*500/g, '"code":200');
 // body = body.replace(/"price":\s*\d+/g, '"price":0');
 // body = body.replace(/"liveStatus":\s*1/g, '"liveStatus":2');
 // body = body.replace(/"sceneLiveStatus":\s*2/g, '"sceneLiveStatus":1');
