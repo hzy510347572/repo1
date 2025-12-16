@@ -22,7 +22,7 @@ var body = $response.body;
 
 body = body.replace(/"isVip":\s*false/g, '"isVip":true');
 body = body.replace(/"price":\s*\d+/g, '"price":0');
-body = body.replace(/"liveStatus":\s*1/g, '"liveStatus":2');
+// body = body.replace(/"liveStatus":\s*1/g, '"liveStatus":2');
 // body = body.replace(/"sceneLiveStatus":\s*2/g, '"sceneLiveStatus":1');
 // body = body.replace(/"livePlatform":\s*1/g, '"livePlatform":0');
 
