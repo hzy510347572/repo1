@@ -8,7 +8,6 @@
 
 
 https:\/\/gateway\.mashibing\.com\/edu-course\/courseHomePage\/isHasCourse* url script-response-body https://raw.githubusercontent.com/hzy510347572/repo1/branch1/wind-fire-thunder-lightning/script/msb/msb3.js
-https:\/\/gateway\.mashibing\.com\/edu-live\/appLiveSign\/findSignStatus* url script-response-body https://raw.githubusercontent.com/hzy510347572/repo1/branch1/wind-fire-thunder-lightning/script/msb/msb3.js
 
 [mitm]
 
