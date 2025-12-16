@@ -22,6 +22,7 @@ var body = $response.body;
 
 body = body.replace(/"data":\s*false/g, '"data":true');
 body = body.replace(/"data":\s*null/g, '"data":true');
+body = body.replace(/"code":\s*500/g, '"code":200');
 // body = body.replace(/"price":\s*\d+/g, '"price":0');
 // body = body.replace(/"liveStatus":\s*1/g, '"liveStatus":2');
 // body = body.replace(/"sceneLiveStatus":\s*2/g, '"sceneLiveStatus":1');
