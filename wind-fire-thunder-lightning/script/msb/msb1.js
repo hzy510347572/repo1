@@ -29,6 +29,7 @@ body = body.replace(/"accredit":\s*false/g, '"accredit":true');
 body = body.replace(/"buyFlag":\s*false/g, '"buyFlag":true');
 
 body = body.replace(/"price":\s*\d+/g, '"price":0');
+body = body.replace(/"hasState":\s*0/g, '"hasState":1');
 
 
 //https://gateway.mashibing.com/edu-course/app/systemCourse/course这个url的时候不能修改 会提示更新无法观看课程资料 但是这个控制vip课程观看权限
