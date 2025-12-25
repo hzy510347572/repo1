@@ -1,20 +1,11 @@
-/*
 
-[rewrite_local]
-
-https:\/\/m.mallcoo.cn\/a\/coupon\/API\/mycoupon\/GetDetailByID url script-response-body https://raw.githubusercontent.com/hzy510347572/repo1/refs/heads/branch1/wind-fire-thunder-lightning/script/dql/dql2.js
-
-[mitm]
-
-hostname = m.mallcoo.cn
-*/
 // 工具函数：获取当日日期，格式化为 YYYY-MM-DD（补零处理，确保月份/日期为两位）
 function getTodayFormattedDate1() {
     const now = new Date();
     const year = now.getFullYear();
     // 月份从 0 开始，需 +1，padStart 补零（比如 1 月 → 01，5 日 → 05）
     const month = String(now.getMonth() + 1).padStart(2, '0');
-    const day = String(now.getDate()+1).padStart(2, '0');
+    const day = String(now.getDate()).padStart(2, '0');
     return `${year}-${month}-${day}`;
 }
 function getTodayFormattedDate2() {
@@ -22,7 +13,7 @@ function getTodayFormattedDate2() {
     const year = now.getFullYear();
     // 月份从 0 开始，需 +1，padStart 补零（比如 1 月 → 01，5 日 → 05）
     const month = String(now.getMonth() + 1).padStart(2, '0');
-    const day = String(now.getDate()+1).padStart(2, '0');
+    const day = String(now.getDate()).padStart(2, '0');
     return `${year}/${month}/${day}`;
 }
 const todayDate1 = getTodayFormattedDate1();
