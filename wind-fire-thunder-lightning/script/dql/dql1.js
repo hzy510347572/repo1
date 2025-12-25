@@ -14,16 +14,16 @@ function getTodayFormattedDate1() {
     const year = now.getFullYear();
     // 月份从 0 开始，需 +1，padStart 补零（比如 1 月 → 01，5 日 → 05）
     const month = String(now.getMonth() + 1).padStart(2, '0');
-    const day = String(now.getDate()).padStart(2, '0');
-    return `${year}-${month}-${day+1}`;
+    const day = String(now.getDate()+1).padStart(2, '0');
+    return `${year}-${month}-${day}`;
 }
 function getTodayFormattedDate2() {
     const now = new Date();
     const year = now.getFullYear();
     // 月份从 0 开始，需 +1，padStart 补零（比如 1 月 → 01，5 日 → 05）
     const month = String(now.getMonth() + 1).padStart(2, '0');
-    const day = String(now.getDate()).padStart(2, '0');
-    return `${year}/${month}/${day+1}`;
+    const day = String(now.getDate()+1).padStart(2, '0');
+    return `${year}/${month}/${day}`;
 }
 
 
@@ -44,8 +44,8 @@ const todayDate2 = getTodayFormattedDate2();
 const regexExact2 = /2025\/12\/25/;
 const regexExact1 = /2025-12-25/;
 
-body = body.replace(regexExact1, todayDate1);
-body = body.replace(regexExact2, todayDate2);
+body = body.replaceAll(regexExact1, todayDate1);
+body = body.replaceAll(regexExact2, todayDate2);
 
 
 $done({ body });
