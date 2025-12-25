@@ -2,7 +2,7 @@
 
 [rewrite_local]
 
-https:\/\/m\.mallcoo\.cn\/a\/coupon\/API\/mycoupon\/GetAboutCoupon url script-response-body https://raw.githubusercontent.com/hzy510347572/repo1/branch1/wind-fire-thunder-lightning/script/dlq/dlq1.js
+https:\/\/m\.mallcoo\.cn\/a\/coupon\/API\/mycoupon\/GetAboutCoupon url script-response-body https://raw.githubusercontent.com/hzy510347572/repo1/refs/heads/branch1/wind-fire-thunder-lightning/script/dql/dql1.js
 
 [mitm]
 
