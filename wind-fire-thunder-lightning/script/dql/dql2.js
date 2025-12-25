@@ -15,7 +15,7 @@ function getTodayFormattedDate1() {
     // 月份从 0 开始，需 +1，padStart 补零（比如 1 月 → 01，5 日 → 05）
     const month = String(now.getMonth() + 1).padStart(2, '0');
     const day = String(now.getDate()).padStart(2, '0');
-    return `${year}-${month}-${day}`;
+    return `${year}-${month}-${day+1}`;
 }
 function getTodayFormattedDate2() {
     const now = new Date();
