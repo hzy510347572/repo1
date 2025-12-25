@@ -10,7 +10,7 @@ hostname = m.mallcoo.cn
 */
 
 
-// var body = $response.body;
+var body = $response.body;
 
 body = "{\n" +
     "  \"m\" : 1,\n" +
