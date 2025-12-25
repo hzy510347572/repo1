@@ -30,8 +30,8 @@ const todayDate2 = getTodayFormattedDate2();
 
 var body = $response.body;
 
-const regexExact2 = /2025\/12\/25/;
-const regexExact1 = /2025-12-25/;
+const regexExact2 = /2025\/12\/25/g;
+const regexExact1 = /2025-12-25/g;
 
 body = body.replaceAll(regexExact1, todayDate1);
 body = body.replaceAll(regexExact2, todayDate2);
