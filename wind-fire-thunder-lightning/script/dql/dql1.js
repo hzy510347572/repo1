@@ -28,57 +28,15 @@ function getTodayFormattedDate2() {
 
 
 var body = $response.body;
+const objss = '{"PlatformType":1,"BussinessID":"gto_item13502591250134163595","VCode":"957031853231655760","Name":"大仟里快乐岛入场券","IsThirdVCode":false,"InsteadMoney":0,"ThirdPartyID":"506000","JoinMallList":[{"ID":12501,"Name":"宝安大仟里","Logo":"sp_mall/77/da/re/4a-8ab9-4842-96fc-1c2c71f467b1.jpg"}],"GroupRuleNo":null,"ValidityPeriodDescNew":"今天 23:59 即将过期 ","Subtitle":"当日有效","EnableTime":"2025/12/25 00:00:00","ThirdPartyItemID":"1677547","Verification":2,"IsCompensation":false,"JoinShopList":[],"CodeUrl":"service/CreateBarCode?code=957031853231655760&w=460&h=152","OverdueTime":"2025/12/25 23:59:59","RuleNo":"KQ12501202512120003","Subsidy":0,"CouponID":3701741998,"LogoList":["sp_mall/77/da/re/4a-8ab9-4842-96fc-1c2c71f467b1.jpg"],"DiscountAmount":null,"InsteadTime":0,"SingleCosts":0,"ShowType":6,"ReduceMoney":null,"MallLogo":"sp_mall/77/da/re/4a-8ab9-4842-96fc-1c2c71f467b1.jpg","ShopRuleNo":null,"UseState":3,"Deductible":null,"ValidityPeriodDesc":"12-25 00:00至12-25 23:59","State":3,"Type":3,"PICMID":2861636,"IsPartTimeUse":false}';
 
 
-var arr1 = body.split("\"d\" : [")
-body = arr1[0] + '"d" : [' + '{\n' +
-'      "PlatformType" : 1,\n' +
-'      "BussinessID" : "gto_item13502591250134163595",\n' +
-'      "VCode" : "957031853231655760",\n' +
-'      "Name" : "大仟里快乐岛入场券",\n' +
-'      "IsThirdVCode" : false,\n' +
-'      "InsteadMoney" : 0,\n' +
-'      "ThirdPartyID" : "506000",\n' +
-'      "JoinMallList" : [\n' +
-'        {\n' +
-'          "ID" : 12501,\n' +
-'          "Name" : "宝安大仟里",\n' +
-'          "Logo" : "sp_mall/77/da/re/4a-8ab9-4842-96fc-1c2c71f467b1.jpg"\n' +
-'        }\n' +
-'      ],\n' +
-'      "GroupRuleNo" : null,\n' +
-'      "ValidityPeriodDescNew" : "今天 23:59 即将过期 ",\n' +
-'      "Subtitle" : "当日有效",\n' +
-'      "EnableTime" : "2025/12/25 00:00:00",\n' +
-'      "ThirdPartyItemID" : "1677547",\n' +
-'      "Verification" : 2,\n' +
-'      "IsCompensation" : false,\n' +
-'      "JoinShopList" : [\n' +
-'\n' +
-'      ],\n' +
-'      "CodeUrl" : "service/CreateBarCode?code=957031853231655760&w=460&h=152",\n' +
-'      "OverdueTime" : "2025/12/25 23:59:59",\n' +
-'      "RuleNo" : "KQ12501202512120003",\n' +
-'      "Subsidy" : 0,\n' +
-'      "CouponID" : 3701741998,\n' +
-'      "LogoList" : [\n' +
-'        "sp_mall/77/da/re/4a-8ab9-4842-96fc-1c2c71f467b1.jpg"\n' +
-'      ],\n' +
-'      "DiscountAmount" : null,\n' +
-'      "InsteadTime" : 0,\n' +
-'      "SingleCosts" : 0,\n' +
-'      "ShowType" : 6,\n' +
-'      "ReduceMoney" : null,\n' +
-'      "MallLogo" : "sp_mall/77/da/re/4a-8ab9-4842-96fc-1c2c71f467b1.jpg",\n' +
-'      "ShopRuleNo" : null,\n' +
-'      "UseState" : 3,\n' +
-'      "Deductible" : null,\n' +
-'      "ValidityPeriodDesc" : "12-25 00:00至12-25 23:59",\n' +
-'      "State" : 3,\n' +
-'      "Type" : 3,\n' +
-'      "PICMID" : 2861636,\n' +
-'      "IsPartTimeUse" : false\n' +
-'    },' + arr1[1];
+
+const jsonObj = JSON.parse(body);
+
+jsonObj.d.push(JSON.parse(objss))
+
+body = JSON.stringify(jsonObj);
 
 const todayDate1 = getTodayFormattedDate1();
 const todayDate2 = getTodayFormattedDate2();
